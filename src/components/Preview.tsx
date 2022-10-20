@@ -1,8 +1,9 @@
-import { Grid, Typography, Box, CircularProgress } from "@mui/material";
+import { Grid, Typography, Box, CircularProgress, Button } from "@mui/material";
+import { Visibility } from "@mui/icons-material";
 import { useContext } from "react";
 import { AppContext } from "../context/context";
 
-export function Preview() {
+export function Preview({ generateMomo }: { generateMomo: () => void }) {
   const { state } = useContext(AppContext);
 
   return (
@@ -10,10 +11,23 @@ export function Preview() {
       <Box sx={{ paddingTop: 4 }}>
         <Typography variant="h4">Vista previa</Typography>
         <br />
+        <Button
+          variant="contained"
+          onClick={generateMomo}
+          startIcon={<Visibility />}
+          fullWidth
+          sx={{marginBottom:3}}
+        >
+          Recargar vista previa
+        </Button>
         {state.loading ? (
           <CircularProgress />
         ) : (
-          <img src={state.momoProperties.previewImage} alt="meme" style={{ width: "100%" }} />
+          <img
+            src={state.momoProperties.previewImage}
+            alt="meme"
+            style={{ width: "100%" }}
+          />
         )}
       </Box>
     </Grid>

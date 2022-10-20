@@ -1,25 +1,29 @@
-import React, { useContext } from "react";
-
+import { useContext } from "react";
 import * as htmlToImage from "html-to-image";
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import "./assets/App.css";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import TextField from "@mui/material/TextField";
-import FormControl from "@mui/material/FormControl";
-import InputLabel from "@mui/material/InputLabel";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
-import ButtonGroup from "@mui/material/ButtonGroup";
-import { UploadFile, Download, Visibility } from "@mui/icons-material";
-import { Button, Slider } from "@mui/material";
+import {
+  Toolbar,
+  Typography,
+  Box,
+  Container,
+  Grid,
+  TextField,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+  Button,
+  Slider,
+  ButtonGroup,
+} from "@mui/material";
+import { UploadFile, Download } from "@mui/icons-material";
+
 import { Appbar } from "./components/Appbar";
 import { Preview } from "./components/Preview";
 import { TempPreviewImage } from "./components/TempPreviewImage";
 import { FloatingActionButton } from "./components/FloatingActionButton";
+
 import { Types } from "./context/reducers";
 import { AppContext, MomoTemplate } from "./context/context";
 
@@ -71,7 +75,7 @@ export default function App() {
       <Toolbar />
       <Container>
         <Grid container spacing={2}>
-          <Preview />
+          <Preview {...{ generateMomo }} />
           <Grid item lg={6} md={8} sm={12}>
             <Box
               sx={{
@@ -115,13 +119,13 @@ export default function App() {
                   id="demo-simple-select"
                   value={state.momoProperties.momoTemplate}
                   label="Plantilla"
-                  onChange={(ev) =>{
+                  onChange={(ev) => {
                     dispatch({
                       type: Types.SetMomoTemplate,
                       payload: {
-                        template: ev.target.value as MomoTemplate
-                      }
-                    })
+                        template: ev.target.value as MomoTemplate,
+                      },
+                    });
                   }}
                 >
                   <MenuItem value={MomoTemplate.Grasoso}>Grasoso</MenuItem>
@@ -184,14 +188,6 @@ export default function App() {
                 min={1}
                 max={4}
               />
-              <br />
-              <Button
-                variant="contained"
-                onClick={generateMomo}
-                startIcon={<Visibility />}
-              >
-                Recargar vista previa
-              </Button>
               <br />
               <ButtonGroup variant="contained">
                 <Button

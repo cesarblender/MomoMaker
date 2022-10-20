@@ -1,6 +1,5 @@
 import { IconButton, AppBar, Toolbar, Typography } from "@mui/material";
-import { Facebook } from "@mui/icons-material";
-import { useContext } from "react";
+import { Facebook, GitHub } from "@mui/icons-material";
 
 export function Appbar() {
   return (
@@ -12,6 +11,13 @@ export function Appbar() {
             [alpha-v0.0.1]
           </Typography>
         </Typography>
+        <IconButton
+          href="https://github.com/seokkuuu/momomaker"
+          target="blank"
+          color="inherit"
+        >
+          <GitHub />
+        </IconButton>
         <IconButton
           href="https://facebook.com/seokkuuu"
           target="blank"
