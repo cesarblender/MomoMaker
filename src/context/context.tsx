@@ -44,7 +44,7 @@ const initialState = {
   loading: false,
   momoProperties: {
     backgroundImage:
-      "https://th.bing.com/th/id/OIP.7mZRby3S7rf5yuJfdOV4vgHaHC?w=212&h=201&c=7&r=0&o=5&pid=1.7",
+      "https://3.bp.blogspot.com/-3o7VZ79X9B4/UaWHC07l53I/AAAAAAAAA-c/RD922mGI89o/s400/GATO+CON+LENTES.jpg",
     bottomText: "HOLA MI MOMO NO TIENE TEXTO ASKAJDAKSJDK",
     brightness: 1,
     momoTemplate: MomoTemplate.Grasoso,

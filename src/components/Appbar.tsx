@@ -6,25 +6,8 @@ export function Appbar() {
     <AppBar position="fixed">
       <Toolbar>
         <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
-          MomoMaker{" "}
-          <Typography variant="body1" component="i" sx={{ flexGrow: 1 }}>
-            [alpha-v0.0.1]
-          </Typography>
+          MomoMaker
         </Typography>
-        <IconButton
-          href="https://github.com/seokkuuu/momomaker"
-          target="blank"
-          color="inherit"
-        >
-          <GitHub />
-        </IconButton>
-        <IconButton
-          href="https://facebook.com/seokkuuu"
-          target="blank"
-          color="inherit"
-        >
-          <Facebook />
-        </IconButton>
       </Toolbar>
     </AppBar>
   );
