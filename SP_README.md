@@ -26,4 +26,4 @@ Haz click [aquí](https://momomaker.vercel.app) para ver la demostración de la 
 
 > Este proyecto ha sido creado por propósitos educacionales y por diversión.
 
-> Mira que puedes hacer con este código leyendo la [licencia](./LICENSE) usada en este proyecto.
+> Mira qué puedes hacer con este código leyendo la [licencia](./LICENSE) usada en este proyecto.
