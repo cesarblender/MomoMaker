@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Impact";
+  src: url("./impact.eot");
+  src: url("./impact.woff") format("woff"),
+  url("./impact.otf") format("opentype"),
+  url("./impact.svg") format("svg");
+}
+
+.meme {
+  width: 1028px;
+  height: 720px;
+  background-size: cover;
+  background-repeat: no;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meme_text {
+  font-family: Impact;
+  -webkit-text-stroke: black 4px;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+}
