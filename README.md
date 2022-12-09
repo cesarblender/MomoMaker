@@ -1,4 +1,4 @@
-# MomoMaker
+# MomoGen.cf (old MomoMaker)
 
 A meme creator app made created with ReactJS and TypeScript.
 
@@ -9,11 +9,11 @@ A meme creator app made created with ReactJS and TypeScript.
 
 ## Demo
 
-Click [here](https://momomaker.vercel.app) to see the demo app.
+Click [here](https://momogen.cf) to see the demo app.
 
 ## How to install it
 
-- Clone the repo. `git clone https://github.com/seokkuuu/momomaker`.
+- Clone the repo. `git clone https://github.com/seokkuuu/momogen.cf`.
 - Run the development server. `npm run dev` or `yarn dev`.
 
 ### Build a production web app

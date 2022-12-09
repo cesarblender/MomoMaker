@@ -18,17 +18,17 @@ export default function App() {
           <Typography variant="h5" component="h5" sx={{ flexGrow: 1 }}>
             MomoGenerator
           </Typography>
-          <Button href="https://github.com/seokkuuu/momomaker" target="blank">
+          <Button href="https://github.com/seokkuuu/momogen.cf" target="blank">
             Código fuente
           </Button>
           <Button
-            href="https://github.com/seokkuuu/momomaker/blob/main/LICENSE"
+            href="https://github.com/seokkuuu/momogen.cf/blob/main/LICENSE"
             target="blank"
           >
-            Licensia
+            Licencia
           </Button>
           <Button
-            href="https://github.com/seokkuuu/momomaker/blob/main/README.md"
+            href="https://github.com/seokkuuu/momogen.cf/blob/main/README.md"
             target="blank"
           >
             Readme

@@ -6,7 +6,7 @@ export function Appbar() {
     <AppBar position="fixed">
       <Toolbar>
         <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
-          MomoMaker
+          MomoGen.cf
         </Typography>
       </Toolbar>
     </AppBar>
