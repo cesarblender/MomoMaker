@@ -29,7 +29,8 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
                 color: "transparent",
                 elevation: 0,
                 sx: {
-                  backdropFilter: "blur(8px)"
+                  backdropFilter: "blur(8px)",
+                  backgroundColor: "#000000aa"
                 }
               },
             }
