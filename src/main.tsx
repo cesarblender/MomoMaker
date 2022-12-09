@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline, ScopedCssBaseline } from "@mui/material";
-import { teal } from "@mui/material/colors";
+import { red } from "@mui/material/colors";
 
 import { AppProvider } from "./context/context";
 
@@ -14,10 +14,25 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         theme={createTheme({
           palette: {
             mode: "dark",
-            primary: teal,
+            primary: red,
+            background: {
+              default: "#000",
+              paper: "#1a1a1a"
+            },
           },
           shape: {
             borderRadius: 21
+          },
+          components: {
+            MuiAppBar: {
+              defaultProps: {
+                color: "transparent",
+                elevation: 0,
+                sx: {
+                  backdropFilter: "blur(8px)"
+                }
+              },
+            }
           }
         })}
       >

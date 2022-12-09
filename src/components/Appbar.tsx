@@ -1,11 +1,10 @@
-import { IconButton, AppBar, Toolbar, Typography } from "@mui/material";
-import { Facebook, GitHub } from "@mui/icons-material";
+import { AppBar, Toolbar, Typography } from "@mui/material";
 
 export function Appbar() {
   return (
     <AppBar position="fixed">
       <Toolbar>
-        <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" component="h1" sx={{ flexGrow: 1 }}>
           MomoGen.cf
         </Typography>
       </Toolbar>
