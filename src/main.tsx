@@ -16,6 +16,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             mode: "dark",
             primary: teal,
           },
+          shape: {
+            borderRadius: 21
+          }
         })}
       >
         <CssBaseline enableColorScheme />
