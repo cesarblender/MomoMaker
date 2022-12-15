@@ -1,4 +1,4 @@
-# MomoGen.cf (old MomoMaker)
+# MomoMaker
 
 A meme creator app made created with ReactJS and TypeScript.
 
